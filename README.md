@@ -24,7 +24,7 @@ int main()
 	std::string result;
 	result.insert(result.begin(), response.begin(), response.end());
 
-	result = CEncoder::U2A_(result);//utf-8 convert to gb2312
+	result = http->U2A_(result);//utf-8 convert to gb2312
 	printf("%s \n", result.c_str());
 
 	std::string headers = http->GetResponseHeaders();
@@ -42,7 +42,7 @@ int main()
 	cookies = http->MergeCookie(cookies, "BAIDUID=26989AD75E0ACAE255E6DC5614A95D4E:FG=test;");
 	printf("merge cookies %s \n", cookies.c_str());
   
-  delete http;
+  	delete http;
 	getchar();
   return 0;
 }
