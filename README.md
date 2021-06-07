@@ -5,7 +5,7 @@ old source : https://github.com/vlinhd11/WinHttpClass
 but header is missed. i updated full header (fix...).
 
 
-# Code
+# Simple
 ```c++
 #include "http.h"
 int main()
